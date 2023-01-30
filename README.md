@@ -10,3 +10,7 @@ Typescript
 Jest
 MongoDB
 Github Actions
+
+## step02 - Configuração eslint com Node.js e Typescript
+
+<https://typescript-eslint.io/getting-started/>
