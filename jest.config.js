@@ -1,14 +1,13 @@
-const { resolve } = require('path');
+import { resolve } from 'path';
+// eslint-disable-next-line no-undef
 const root = resolve(__dirname)
-module.exports = {
-  rootDir: root,
-  displayName: 'root-tests',
-  testMatch: ['<rootDir>/src/**/*.test.ts'],
-  testEnvironment: 'node',
-  clearMocks: true,
-  preset: 'ts-jest',
-  moduleNameMapper: {
+export const rootDir = root;
+export const displayName = 'root-tests';
+export const testMatch = ['<rootDir>/src/**/*.test.ts'];
+export const testEnvironment = 'node';
+export const clearMocks = true;
+export const preset = 'ts-jest';
+export const moduleNameMapper = {
     '@src/(.*)': '<rootDir>/src/$1',
     '@test/(.*)': '<rootDir>/test/$1',
-  },
 };
